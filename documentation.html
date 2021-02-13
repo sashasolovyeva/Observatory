@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Observatory</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+    @font-face {
+      font-family: "Poppins";
+      }
+
+      body{
+        margin: 0;
+        background-color: rgb(0,255,0, 0.25);
+        font-size: 20px;
+        font-family: "Poppins";
+      }
+
+      .text{
+        width: 70%;
+        margin: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+
+      .smallertext{
+        font-size: 14px;
+      }
+
+      video {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text">
+      <h1>Documentation: Sourthern Russia Observatory Experience</h1>
+      <h3>Idea:</h3>
+      <p>Inspired by my visit to SAO RAN (Special Astrophysics Observatory of the Russian Academy of Science) this summer,
+        and an opportunity to work on a material about the local scientists' lives and work, I wanted to create an experience
+        that would let the user explore this unique place in an interactive, unconventional way, and learn more about
+        what astrophysists do in their daily lives.</p><p>
+        The user is able to navigate the experience by creating motion on either side of their camera.
+        They can then teleport themselves to one of the three places in the observatory: the lab building, the telescope tower, or the Bukovo township.
+        Each of the locations invites the user to read a piece of an essay I have written about it and, in an experimental fashion,
+        to control scrolling the text with their motion.</p><p>
+        Additionally, in the telescope tower part of the experience, the user is able to rotate the tower around and take a peek at
+        what the telescope looks like when it starts its work at the beginning of every night.
+      </p>
+
+      <h3>Justification:</h3>
+      <p>Why motion detection? I was really impressed by an old remote controller that had been used to control telescope in a pre-digital era;
+      with its long, full of switches and triggers body, the controller required a lot of motion and attention to operate.
+      Using an image of the controller in the experience, and making the user make precise movements to explore the space around them,
+      seemed fitting to immerse them inside the life of the observatory.</p><p>
+      I acknowledge that there might be better mediums out there for a more seamless UX, especially when it comes to reading long-form
+      materials online, but I believe this is an interesting experiment in reimagining how we navigate the web, taking away regular scrolling
+      (minimal amount of motion) and making the user physically and actively engage with the content.
+      </p>
+
+      <h3>Technical implementation:</h3>
+      <p>Some of the techniques, frameworks and assets that are used in this project are:</p>
+      <ul>
+        <li>p5.js, AR.js, A-Frame, and Professor Kapp's library that adapts A-Frame to easy usage with p5</li>
+        <li>Motion detecton algorithm</li>
+        <li>Telescope sound recorded at the James Gregory Telescope in St. Andrews, Scotland from freesound.org</li>
+        <li>Mountain and tree assets from Google Poly (rip Google Poly :()</li>
+        <li>The lab building texture (Adobe Photoshop) and the BTA tower (assembled by me out of 3D primitives)</li>
+        <li>Object-Oriented Programming to construct entry points, stars, and some of the buildings</li>
+      </ul>
+
+      <h3>Project iterations:</h3>
+      <p>This project was initiated as a <a href="https://i6.cims.nyu.edu/~as11303/interactive/assignment06/">virtual reality experience</a>
+        but eventually, the AR medium was chosen for the aforementioned reasons of experimentation and interactivity. However, I have
+        interest in a continued engagement with the observatory content, and I am curious to further develop the VR version, for an alternative
+        way of presenting my long-read essay in a user-friendly but exciting way.
+      </p>
+
+      <h3>Further development:</h3>
+      <p>
+        Other than the aforementioned curiosity in VR, I think there is quite a lot of opportunities with capitalizing on the possibilities of
+        computer vision. For example, it would be great to use motion detection in 3D visualizations of actual space objects
+        (another trajectory for future development) in order to let the user to immersively learn about astrophysists' methods and objects
+        of research.</p> <p>Other than that, of course, motion detection in this project does not always work seamlessly, so integrating other computer
+        vision techniques would be a great next step to make this virtual space even easier to navigate and decipher.
+      </p>
+
+    </div>
+  </body>
+</html>
